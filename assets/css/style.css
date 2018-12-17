@@ -1,0 +1,87 @@
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzdHlsZS5zY3NzIl0sImZpbGUiOiJzdHlsZS5jc3MifQ== */
+
+/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,400,500,500i,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:200,200i,400,500,500i,900");
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  color: #111;
+}
+
+body {
+  font-family: Lato;
+  color: #959595;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100%;
+}
+
+header .content {
+  position: relative;
+  z-index: 1;
+}
+
+header .content h2 {
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar .title {
+  background: #00ada4;
+  padding: 10px;
+}
+
+.sidebar .title h5 {
+}
+.add-new-btn {
+  border-radius: 100%;
+}
+
+#taskDisplay li {
+  border: double #eee 3px;
+  padding: 10px;
+}
+
+.status-box {
+  width: 10%;
+}
+
+.bg-light {
+  background: #ddd;
+}
+
+.task-content {
+  position: relative;
+  box-shadow: 0px 11px 42px 0px #eee;
+}
+
+.task-content .status {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.status {
+  font-weight: 500;
+}
+
+.task-content h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.task-content .action {
+  border-top: 1px solid #ddd;
+}
+
+.task-content .meta i {
+  color: #2b99f7;
+}

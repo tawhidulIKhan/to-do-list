@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="assets/css/bootstrap.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+         />
+      <title>To do list</title>
+   </head>
+   <body class="bg-light">
+      <header
+         class="bg-white d-flex position-relative align-items-end mb-5"
+         >
+         <div class="container">
+            <div class="content p-3 d-flex justify-content-between">
+               <h2>My Day</h2>
+               <div>
+                  <button
+                     type="button"
+                     class="btn btn-primary add-new-btn mr-3"
+                     data-toggle="modal"
+                     data-target="#exampleModal"
+                     >
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                  </button>
+                  <button class="btn btn-danger" id="clearAll">
+                  <i class="fa fa-trash" aria-hidden="true"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Button trigger modal -->
+      <div class="container-fluid p-0 h-100">
+         <div class="row no-gutters h-100">
+            <div class="col-12 col-md-3 col-lg-3 h-100">
+               <div class="sidebar">
+                  <ul class="m-0">
+                     <li class="widget d-flex justify-content-between">
+                        Total Task : 
+                        <div>
+                           <span id="total" class="badge bg-danger text-white rounded-circle"></span>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-12 col-md-9  col-lg-9 ml-auto h-100">
+               <div class=" ">
+                  <div class="row no-gutters">
+                     <div class="col-10 m-auto">
+                        <ul class="list-unstyled" id="taskDisplay"></ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="fixed-bottom p-3 bg-white">
+         <div class="container">
+            <div class="row no-gutters">
+               <footer class="w-100 d-flex justify-content-between">
+                  <div class="github-profiles">
+                     <a href="https://github.com/tawhid-coder">Find my other projects</a>
+                  </div>
+                  <p>Developed by <a href="https://tawhid-me.com">Tawhidul Islam Khan</a> </p>
+               </footer>
+            </div>
+         </div>
+      </div>
+      <!-- Modal -->
+      <div
+         class="modal fade"
+         id="exampleModal"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+         >
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Add new task</h5>
+               <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                  >
+               <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <!-- 
+                  ===================================================
+                  |  Task Add Form
+                  ===================================================
+                  -->
+               <form action="" class="mb-4" id="addTask">
+                  <div class="form-group">
+                     <label for="taskName">Name</label>
+                     <input type="text" class="form-control" id="taskName" required />
+                  </div>
+                  <div class="form-group">
+                     <label for="taskName">Category</label>
+                     <input type="text" class="form-control" id="taskCategory" required />
+                  </div>
+                  <div class="form-group">
+                     <label for="taskDue">Due</label>
+                     <input type="date" class="form-control" id="taskDue" required />
+                  </div>
+                  <div class="form-group">
+                     <label for="taskPriority">Priority</label>
+                     <select id="taskPriority" class="form-control" required>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <button class="btn btn-primary" id="taskSubmit">
+                     Add
+                     <i class="fa fa-plus" aria-hidden="true"></i>
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/chance.min.js"></script>
+      <script src="assets/js/helpers.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>
