@@ -3,7 +3,7 @@
 A simple to-do list Application with Vanila Javascript , Bootstrap .
 [live demo](https://wonderful-swartz-70eec3.netlify.com/)
 
-## Table of Contents
+### Screenshot
 
 ![todometer](https://i.imgur.com/R7uk0LH.png)
 
