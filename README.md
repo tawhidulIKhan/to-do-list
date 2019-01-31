@@ -1,7 +1,7 @@
 # To-Do List Application
 
 A simple to-do list Application with Vanila Javascript , Bootstrap .
-[live demo](https://wonderful-swartz-70eec3.netlify.com/)
+[live demo](https://tawhid-coder.github.io/to-do-list/)
 
 ### Screenshot
 
